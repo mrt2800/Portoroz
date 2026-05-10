@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navia Sails — Moj načrt za Internautico 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --paper: #f9f8f4; --ink: #0f0f10; --muted: #545960; --line: #d6d8db; --accent: #6c7d93; }
+  html, body { background: var(--paper); color: var(--ink); font-family: "DM Sans", sans-serif; }
+  body { line-height: 1.55; font-weight: 350; -webkit-font-smoothing: antialiased; }
+  .page { width: 100%; max-width: 680px; margin: 0 auto; padding: 4.75rem 1.5rem 4rem; }
+  .header { margin-bottom: 3rem; }
+  .label { display: inline-block; margin-bottom: 0.8rem; font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--accent); }
+  h1 { font-family: "Geist", sans-serif; font-size: clamp(2.3rem, 6.2vw, 4rem); line-height: 1.03; letter-spacing: -0.03em; font-weight: 700; margin-bottom: 0.7rem; }
+  .subtitle { font-size: 1.06rem; font-weight: 400; color: var(--muted); margin-bottom: 1.4rem; }
+  .meta { display: flex; flex-wrap: wrap; gap: 0.55rem; font-size: 0.86rem; color: var(--ink); }
+  .meta .sep { color: var(--line); }
+  section { border-top: 1px solid var(--line); padding-top: 1.15rem; margin-top: 2.2rem; }
+  .section-label { font-size: 0.66rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600; color: var(--accent); margin-bottom: 1.1rem; }
+  .big-quote { font-family: "Geist", sans-serif; font-size: clamp(2.15rem, 8vw, 4.7rem); line-height: 0.98; letter-spacing: -0.035em; font-weight: 700; margin-bottom: 1rem; }
+  p + p { margin-top: 0.85rem; }
+  .phase { padding: 0.95rem 0; border-bottom: 1px solid var(--line); }
+  .phase:last-child { border-bottom: 0; }
+  .phase-tag { font-size: 0.67rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem; }
+  .phase-title { font-family: "Geist", sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.45rem; }
+  .target-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .target { padding-top: 0.75rem; border-top: 2px solid var(--line); }
+  .target.priority-1 { border-top-color: var(--accent); }
+  .target-label { font-size: 0.67rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: var(--muted); margin-bottom: 0.45rem; }
+  .target-name { font-family: "Geist", sans-serif; font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .materials { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3rem 1.8rem; }
+  .material-title { font-family: "Geist", sans-serif; font-size: 0.98rem; font-weight: 700; margin-bottom: 0.4rem; }
+  .dash-list { list-style: none; }
+  .dash-list li { margin-bottom: 0.22rem; color: var(--muted); font-size: 0.94rem; }
+  .dash-list li::before { content: "- "; color: var(--ink); }
+  .kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: end; }
+  .kpi { padding: 0 0.85rem; }
+  .kpi:first-child { padding-left: 0; }
+  .kpi + .kpi { border-left: 1px solid var(--line); }
+  .kpi-num { font-family: "Geist", sans-serif; font-size: clamp(2.1rem, 7.3vw, 3.3rem); line-height: 1; font-weight: 700; margin-bottom: 0.35rem; }
+  .kpi-label { font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  .followup-list { list-style: none; counter-reset: step; }
+  .followup-list li { counter-increment: step; margin-bottom: 0.62rem; padding-left: 1.55rem; position: relative; }
+  .followup-list li::before { content: counter(step) "."; position: absolute; left: 0; font-weight: 700; color: var(--ink); }
+  @media (max-width: 780px) {
+    .target-grid { grid-template-columns: 1fr; }
+    .kpis { grid-template-columns: 1fr 1fr; gap: 1rem 0; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="header">
+    <div class="label">NAVIA SAILS — NAČRT</div>
+    <h1>Internautica 2026</h1>
+    <p class="subtitle">Internautica · Portorož, 23. maj</p>
+    <div class="meta">
+      <span>23. maj 2026</span>
+      <span class="sep">·</span>
+      <span>📍 Portorož</span>
+      <span class="sep">·</span>
+      <span>Ekipa</span>
+      <span class="sep">·</span>
+      <span>🎯 Cilj: 10 partnerstev</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-label">Misija dneva</div>
+    <div class="big-quote">10 prijavljenih partnerjev</div>
+    <p>Internautica je največji navtični sejem v regiji in priložnost, da v enem dnevu zgradimo bazo zaupanja vrednih partnerjev za sezono 2026 - 2027. Ciljilj ni prodaja na mestu — cilj je deset konkretnih, dogovorjenih naslednjih korakov s charter podjetji, skiperji in lastniki, ki imajo realen interes za sodelovanje.</p>
+    <p>Z ekipo bomo imeli v glavi isto sporočilo: kdo smo, kaj ponujamo drugače in zakaj se splača govoriti z nami naprej. Manj bomo predstavitljali in več poslušali. Vsak pogovor bo uspešen šele takrat, ko se konča z imenom, kontaktom in dogovorjenim datumom za naslednji klic.</p>
+  </section>
+
+  <section>
+    <div class="section-label">Načrt dneva</div>
+
+    <article class="phase">
+      <div class="phase-tag">JUTRO</div>
+      <h3 class="phase-title">Zgodnji prihod, orientacija in razdelitev</h3>
+      <p>V marino bomo prišli točno na uro pred uradnim odprtjem. Skupaj jo bomo prehodili, označili ključne razstavne prostore. in se razdelili v dve skupini. Cilj je pokriti charter podjetja, skiperje in lastnike večjih plovil.</p>
+    </article>
+
+    <article class="phase">
+      <div class="phase-tag">OPOLDNE</div>
+      <h3 class="phase-title">Sestanek?</h3>
+      <p>Naredili bomo kratek, fokusiran sestanek. Določili bomo najbolj zaintereserane kontakte. Na podlagi tega bom prilagodil našo popoldansko taktiko. Če bomo videli, da je en segment dobro pokrit, se bomo preusmeril tja, kjer je še potencial.</p>
+    </article>
+
+    <article class="phase">
+      <div class="phase-tag">POPOLDNE</div>
+      <h3 class="phase-title">Zaključevanje kontaktov in neformalni prostori</h3>
+      <p>Popoldne se bomo vrnili k obetavnim kontaktom iz jutra in dogovorili za naslednji korak — sestanek, klic ali ogled flote. Ko bodo glavni razstavni prostori pokriti, bomo težišče prestavili v bare in na terase.</p>
+    </article>
+
+    <article class="phase">
+      <div class="phase-tag">VEČER</div>
+      <h3 class="phase-title">Mreženje, zaključek in takojšnje nadaljevanje</h3>
+      <p>Udeležili se bom večernega programa in uradnih dogodkov (če bodo letos tud), kjer bomo poskusili doseči še kakšen sestanek. Še isti večer bomo poskrbeli, da vnesemo vse kontakte v CRM s kratkimi opombami o pogovorih. Vsakemu, ki je obljubil naslednji korak, se pošlje personaliziran mail, dokler se naš se spomnijo.</p>
+    </article>
+  </section>
+
+  <section>
+    <div class="section-label">Koga bomo nagovarjal</div>
+    <div class="target-grid">
+      <article class="target priority-1">
+        <div class="target-label">Prioriteta 1</div>
+        <h3 class="target-name">Mala in srednja charter podjetja</h3>
+        <p>Operaterji s 5–25 plovili, ki iščejo dodatno floto ali zanesljivega partnerja za rezervacije izven sezone.</p>
+      </article>
+
+      <article class="target priority-1">
+        <div class="target-label">Prioriteta 1</div>
+        <h3 class="target-name">Neodvisni skiperji</h3>
+        <p>Profesionalni skiperji, ki potrebujejo plovila in zaupanja vrednega partnerja za logistiko.</p>
+      </article>
+
+      <article class="target">
+        <div class="target-label">Prioriteta 2</div>
+        <h3 class="target-name">Lastniki večjih plovil</h3>
+        <p>Privatni lastniki, ki razmišljajo o oddajanju plovila v charter management in iščejo profesionalno upravljanje.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Materiali za pripravo</div>
+    <div class="materials">
+      <article>
+        <h3 class="material-title">Vizitke</h3>
+        <ul class="dash-list">
+          <li>150 kosov, Design dorečemo</li>
+          <li>QR koda za demo??.</li>
+          <li>Mail in Tel</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3 class="material-title">Letak A5</h3>
+        <ul class="dash-list">
+          <li>Kratek pregled platforme</li>
+          <li>Trije ključni razlogi za sodelovanje z nami.</li>
+          <li>Kontakti ekipe</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3 class="material-title">Nadaljevalna e-pošta</h3>
+        <ul class="dash-list">
+          <li>Pripravimo teamplate</li>
+          <li>Personalizacija</li>
+          <li>Vključevala bo konkreten predlog naslednjega koraka.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3 class="material-title">Demo na telefonu??</h3>
+        <ul class="dash-list">
+          <li>Pregled rezervacijskega sistema.</li>
+          <li>Primer poročila za lastnika.</li>
+          <li>Ease of use!</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Uspeh</div>
+    <div class="kpis">
+      <div class="kpi">
+        <div class="kpi-num">10</div>
+        <div class="kpi-label">Dogovorjenih partnerstev</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-num">30+</div>
+        <div class="kpi-label">Kvalificiranih kontaktov</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-num">90%</div>
+        <div class="kpi-label">Odzivnost v 24 urah</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-num">0</div>
+        <div class="kpi-label">Izgubljenih kontaktov</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Po dogodku (24.–27. maj)</div>
+    <ol class="followup-list">
+      <li>Najkasneje 24. maja zjutraj bomo vneseli vse kontakte v CRM z opombami iz pogovorov.</li>
+      <li>Vsakemu kontaktu bomo poslali personaliziran e-mail v roku 24 ur.</li>
+      <li>Do 26. maja se dogovorimo za klic ali sestanek z desetimi prioritetnimi partnerji.</li>
+      <li>27. maja naredimo interni pregled rezultatov — kaj je delovalo in kaj ne.</li>
+      <li>Na podlagi naučenega posodobimo playbook za naslednji sejem.</li>
+    </ol>
+  </section>
+</main>
+</body>
+</html>
